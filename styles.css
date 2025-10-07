@@ -125,3 +125,96 @@ canvas {
   max-width: 100%;
   height: auto;
 }
+/* --- Fix layout for AI Platform section --- */
+.platform {
+  text-align: center;
+  padding: 100px 60px;
+  background-color: #f7fbfc;
+}
+
+.platform-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.platform-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  padding: 40px 30px;
+  width: 240px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.platform-card .icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.platform-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #0d1a2d;
+  font-weight: 600;
+}
+
+/* --- Fix layout for Services section --- */
+.services {
+  background: linear-gradient(90deg, #e8f6f7, #d5f1f4);
+  padding: 100px 60px;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+  color: #0d1a2d;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #2a3b4d;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.service-card .btn {
+  border: 2px solid #1a3c78;
+  color: #1a3c78;
+}
+
+.service-card .btn:hover {
+  background-color: #1a3c78;
+  color: #fff;
+}
